@@ -26,10 +26,11 @@ img {
   background: #12A5CF !important;
 }
 .row {
-  margin: 0 auto;
-  width: 90%;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.bg-navy {
+  background: #557AA2;
 }
 /* ヘッダー */
 #header {
@@ -59,7 +60,13 @@ img {
   float: left;
   margin: 0 2rem;
 } 
-
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+#top_image {
+  padding-top: 100px;
+}
 /* トップ画像のテキスト部分 */
 .catch_copy{
   font-size: 4.5rem;
@@ -68,7 +75,7 @@ img {
   margin-bottom: 2rem;
 }
 .image-text {
-  padding-left: 4rem;
+  padding-left: 2rem;
   width: 100%;
   height: 100%;
 }
@@ -81,12 +88,12 @@ img {
 .primary-underline:after {
   content: '';
   position:absolute;
-  left: 23%;
+  left: 2%;
   bottom: -5px;
   display: inline-block;
   width: 300px;
   height: 5px;
-  background-color: orange;
+  background-color:#fd7e00;
   border-radius: 2px;
 }
 .image-text button {
@@ -134,7 +141,7 @@ img {
 }
 /* サブタイトル */
 .subtitle {
-  color: #54bddb;
+  color: #fd7e00;
   margin-bottom: 20px;
   font-size: 28px;
   font-weight: bold;
@@ -149,7 +156,7 @@ img {
   font-weight: bold;
 }
 /* 新型コロナウイルスの概要 */
-.overview-title {
+.top_title {
   margin-bottom: 70px;
 }
 .overview-container {
@@ -166,3 +173,35 @@ img {
   min-height: 180px;
 }
 /* 各種症状について */
+.symptom_image {
+  height: 565px;
+}
+.symptom_image img {
+  height: 100%;
+}
+.symptom_text {
+  height: 565px;
+  padding: 80px;
+}
+.symptom_text p {
+  margin-top: 50px;
+  font-size: 24px;
+}
+/* テーブル */
+table th{
+  text-align: center;
+  background: linear-gradient(#829ebc,#225588);
+}
+.measures_image {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.measures_image img {
+  width: 100%;
+  height: 100%;
+}
+.measures_text {
+  position: absolute;
+  top: 5%;
+}

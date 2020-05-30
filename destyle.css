@@ -17,7 +17,7 @@
      ========================================================================== */
   
   /**
-   * 1. Correct the line height in all browsers.
+   * 1. Correct the line height in all brow containersers.
    * 2. Prevent adjustments of font size after orientation changes in iOS.
    * 3. Remove gray overlay on links for iOS.
    */
@@ -32,7 +32,7 @@
      ========================================================================== */
   
   /**
-   * Remove the margin in all browsers.
+   * Remove the margin in all brow containersers.
    */
   
   body {
@@ -118,8 +118,8 @@
   }
   
   /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
+   * 1. Correct the inheritance and scaling of font size in all brow containersers.
+   * 2. Correct the odd `em` font sizing in all brow containersers.
    */
   
   pre {
@@ -165,8 +165,8 @@
   }
   
   /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
+   * 1. Correct the inheritance and scaling of font size in all brow containersers.
+   * 2. Correct the odd `em` font sizing in all brow containersers.
    */
   
   code,
@@ -177,7 +177,7 @@
   }
   
   /**
-   * Add the correct font size in all browsers.
+   * Add the correct font size in all brow containersers.
    */
   
   small {
@@ -186,7 +186,7 @@
   
   /**
    * Prevent `sub` and `sup` elements from affecting the line height in
-   * all browsers.
+   * all brow containersers.
    */
   
   sub,
@@ -343,7 +343,7 @@
    * 1. Correct the text wrapping in Edge and IE.
    * 2. Correct the color inheritance from `fieldset` elements in IE.
    * 3. Remove the padding so developers are not caught out when they zero out
-   *    `fieldset` elements in all browsers.
+   *    `fieldset` elements in all brow containersers.
    */
   
   legend {
@@ -434,7 +434,7 @@
   }
   
   /*
-   * Add the correct display in all browsers.
+   * Add the correct display in all brow containersers.
    */
   
   summary {
