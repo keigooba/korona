@@ -9,16 +9,20 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="destyle.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+  <!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
 </head>
 <body>
   <!-- ヘッダー -->
-  <header id="header">
+  <header id="header" class="fixed-top">
     <div class="header-container">
       <h1 class="header_title">
         <a href='index.html'>COVID-19</a>
       </h1>
       <div id="js-nav-toggle">
-        <div>
+        <div class="nav-toggle">
           <span></span>
           <span></span>
           <span></span>
@@ -44,11 +48,12 @@
         </ul>
       </nav>
     </div>
+    <div id="mask"></div>
   </header>
   <!-- メインコンテンツ -->
   <div class="container-fluid bg-primary text-white">
   <div class="row container" id="top_image">
-    <div class="col-6 image-text">
+    <div class="col-md-6 image-text">
       <h1 class="catch_copy">忘れないで！<br>
         コロナウイルス<br>
         の危険性‼︎
@@ -58,9 +63,9 @@
       </p>
       <p>国民全員の協力あって安全な国が成り立っています。</p>
       <p class="primary-underline">「国民全員が協力し、安全な世の中を」</p>
-      <a href="overview.html"><button class="btn btn-light btn-lg image-btn">新型コロナウイルスとは</button></a>
+      <a href="overview.html" class="btn_overview"><button class="btn btn-light btn-lg image-btn">新型コロナウイルスとは</button></a>
     </div>
-    <div class="col-6 picture-container">
+    <div class="col-md-6 picture-container">
       <img src="img/background1.jpg" alt="女性と子供の写真"class="picture picture1">
       <img src="img/background2.jpg" alt="消毒液の写真"class="picture picture2">
       <img src="img/background3.jpg" alt="手洗いの写真"class="picture picture3">
@@ -75,4 +80,12 @@
     </div>
   </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  // ハンバーガーメニュー
+  $('#js-nav-toggle').on('click', function () {
+    $('#js-nav-toggle,.header_nav,#mask').toggleClass('show');
+});
+ 
+</script>
 </html>

@@ -271,7 +271,7 @@
   button,
   input {
     /* 1 */
-    overflow: visible;
+    /* overflow: visible; */
   }
   
   /**
