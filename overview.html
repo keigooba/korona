@@ -12,13 +12,13 @@
 </head>
 <body>
   <!-- ヘッダー -->
-  <header id="header">
+  <header id="header" class="fixed-top">
     <div class="header-container">
       <h1 class="header_title">
         <a href='index.html'>COVID-19</a>
       </h1>
       <div id="js-nav-toggle">
-        <div>
+        <div class="nav-toggle">
           <span></span>
           <span></span>
           <span></span>
@@ -27,7 +27,7 @@
       <nav class='header_nav'>
         <ul id="nav-toggle-2">
           <li>
-            <a href="index.html"><i class="fa fa-mountain"></i>新型コロナウイルスとは</a>
+            <a href="overview.html"><i class="fa fa-mountain"></i>新型コロナウイルスとは</a>
           </li>
           <li>
             <a href="symptom.html"><i class="fas fa-procedures"></i>各種症状</a>
@@ -44,27 +44,28 @@
         </ul>
       </nav>
     </div>
+    <div id="mask"></div>
   </header>
   <!-- 新型コロナウイルスとは -->
   <div class="container-fluid bg-light">
     <div class="row container" id="overview">
       <div class="col-12 top_title">
         <h4 class="subtitle">overview</h4>
-        <h1 class="title"><i class="fas fa-mountain"></i>新型コロナウイルスとは</h1>
-        <p class="title-text">実際、コロナウイルスとは何が危険なのでしょうか？<br>
+        <h1 class="title fade-element-up js-fade-trigger"><i class="fas fa-mountain"></i>新型コロナウイルスとは</h1>
+        <p class="title-text fade-element-up js-fade-trigger">実際、コロナウイルスとは何が危険なのでしょうか？<br>
           それを一緒に確認していきましょう。</p>
       </div>
-      <section class="col-4 overview-container">
+      <section class="col-md-4 overview-container fade-element-left js-fade-trigger">
         <h1 class="elem-title">①２つの顔を持つ<br>ウイルス</h1>
         <p>感染しても、多くは症状が出ません。一方で、高齢者や持病をお持ちの方には、牙をむいて襲い掛かります。<span>その場合、肺炎が急速に悪化し、人工呼吸器が必要となります。</span></p>
         <img src="img/viewpicture1.jpg">
       </section>
-      <section class="col-4 overview-container">
+      <section class="col-md-4 overview-container fade-element-left js-fade-trigger">
         <h1 class="elem-title">②インフルエンザとは<br>違う恐ろしさ</h1>
         <p>元気な方でも急激に悪化し、亡くなることがあります。有効な薬はないため、患者さんは耐えるしかありません。<span>人工呼吸器が雄一の治療法であり、不足すると助かる命が助かりません。</span></p>
         <img src="img/viewpicture2.jpg">
       </section>
-      <section class="col-4 overview-container">
+      <section class="col-md-4 overview-container fade-element-left js-fade-trigger">
         <h1 class="elem-title">③異例の医療崩壊</h1>
         <p>イタリヤ、スペイン、アメリカでは、実際に人工呼吸器の不足、医療崩壊が起こっています。<span>日本はまだそこまでは至っていませんが、現場からは医療崩壊しそうだという悲鳴があがっています。</span></p>
         <img src="img/viewpicture3.jpg">
@@ -77,4 +78,6 @@
     </div>
   </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src ="main.js"></script>
 </html>
