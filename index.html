@@ -9,10 +9,6 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="destyle.css">
   <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
-  <!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
 </head>
 <body>
   <!-- ヘッダー -->
@@ -53,7 +49,7 @@
   <!-- メインコンテンツ -->
   <div class="container-fluid bg-primary text-white">
   <div class="row container" id="top_image">
-    <div class="col-md-6 image-text">
+    <div class="col-md-6 image-text js-fade-trigger fade-element-up">
       <h1 class="catch_copy">忘れないで！<br>
         コロナウイルス<br>
         の危険性‼︎
@@ -66,11 +62,14 @@
       <a href="overview.html" class="btn_overview"><button class="btn btn-light btn-lg image-btn">新型コロナウイルスとは</button></a>
     </div>
     <div class="col-md-6 picture-container">
-      <img src="img/background1.jpg" alt="女性と子供の写真"class="picture picture1">
-      <img src="img/background2.jpg" alt="消毒液の写真"class="picture picture2">
-      <img src="img/background3.jpg" alt="手洗いの写真"class="picture picture3">
-      <img src="img/background4.jpg" alt="コロナウイルスの画像"class="picture picture4">
-      <img src="img/background5.jpg" alt="感染状況の画像"class="picture picture5">
+      <img src="img/background1.jpg" alt="女性と子供の写真"class="picture picture1 move-element-rotate2D js-move-trigger">
+      <img src="img/background2.jpg" alt="消毒液の写真"class="picture picture2 move-element-rotateX js-move-trigger">
+      <img src="img/background3.jpg" alt="手洗いの写真"class="picture picture3 move-element-rotateY js-move-trigger">
+      <img src="img/background4.jpg" alt="コロナウイルスの画像"class="picture picture4 move-element-scale js-move-trigger">
+      <img src="img/background5.jpg" alt="感染状況の画像"class="picture picture5 move-element-skew js-move-trigger">
+    </div>
+    <div class="col-12 warning_text text-center">
+      ※このLPはイメージ(サンプル・架空のもの)です。
     </div>
   </div>
   </div>
@@ -81,11 +80,5 @@
   </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-  // ハンバーガーメニュー
-  $('#js-nav-toggle').on('click', function () {
-    $('#js-nav-toggle,.header_nav,#mask').toggleClass('show');
-});
- 
-</script>
+<script src ="main.js"></script>
 </html>

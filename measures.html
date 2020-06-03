@@ -12,13 +12,13 @@
 </head>
 <body>
   <!-- ヘッダー -->
-  <header id="header">
+  <header id="header" class="fixed-top">
     <div class="header-container">
       <h1 class="header_title">
         <a href='index.html'>COVID-19</a>
       </h1>
       <div id="js-nav-toggle">
-        <div>
+        <div class="nav-toggle">
           <span></span>
           <span></span>
           <span></span>
@@ -44,34 +44,35 @@
         </ul>
       </nav>
     </div>
+    <div id="mask"></div>
   </header>
   <!-- 今後の対策 -->
   <div class="container-fluid">
-  <div class="row" id="measures" style="padding: 0;">
+  <div class="row" id="measures" style="padding-top: 6rem;">
     <div class="col-12 measures_image">
       <img src="img/people.jpg">
       <div class="measures_text text-center">
         <h4 class="subtitle">measures</h4>
-        <h1 class="title text-white"><i class="fas fa-bookmark"></i>今後の対策</h1>
-        <div class="measures_container circle1 bg-white">
-          <h1>日本の感染者</h1>
-          <p>世界的に見ても特に先進国の中でも日本の感染者数は少ない傾向となっており、<span class="text-bold">緊急事態宣言による外出の自粛や、国民一人一人が意識をして、感染症対策をしていることの効果が出ていることがうかがえます。</span></p>
+        <h1 class="title text-white fade-element-up js-fade-trigger"><i class="fas fa-bookmark"></i>今後の対策</h1>
+        <div class="measures_container circle1 bg-white fade-elem js-fade-trigger">
+          <h1 class="fade-element-down">日本の感染者</h1>
+          <p class="fade-element-up">世界的に見ても特に先進国の中でも日本の感染者数は少ない傾向となっており、<span class="text-bold">緊急事態宣言による外出の自粛や、国民一人一人が意識をして、感染症対策をしていることの効果が出ていることがうかがえます。</span></p>
         </div>
-        <div class="measures_container circle2 bg-white">
-          <h1>持続的な免疫獲得</h1>
-          <p>どの専門家も共通して述べているのは終生免疫獲得はできないのではないかということです。<span class="text-bold">新型コロナウイルスに感染した方の血液検査をして調べたところ、抗体は非常に少なかったということも分かっています。</span></p>
+        <div class="measures_container circle2 bg-white fade-elem js-fade-trigger">
+          <h1 class="fade-element-down">持続的な免疫獲得</h1>
+          <p class="fade-element-up">どの専門家も共通して述べているのは終生免疫獲得はできないのではないかということです。<span class="text-bold">新型コロナウイルスに感染した方の血液検査をして調べたところ、抗体は非常に少なかったということも分かっています。</span></p>
         </div>
-        <div class="measures_container circle3 bg-white">
-          <h1>第2波について</h1>
-          <p><span class="text-bold">日本における第2波はすでに起こっていたというのが厚生労働省の見方です。</span>ですが、今後経済活動が再開した際に、中国や韓国と同様に集団感染をおこし、また新たな波が起こることが懸念をされています。</p>
+        <div class="measures_container circle3 bg-white fade-elem js-fade-trigger">
+          <h1 class="fade-element-down">第2波について</h1>
+          <p class="fade-element-up"><span class="text-bold">日本における第2波はすでに起こっていたというのが厚生労働省の見方です。</span>ですが、今後経済活動が再開した際に、中国や韓国と同様に集団感染をおこし、また新たな波が起こることが懸念をされています。</p>
         </div>
       </div>   
     </div>
   </div>
   </div>
-  <div class="mesutures_summary circle4 bg-navy">
-    <h1 class="title text-center">まとめ・対策</h1>
-    <p><span class="text-bold">今後、新型コロナウイルスはどのような経緯をたどり終息あるいは再度感染を増加させてしまうのかについては現在も研究段階となっています。</span>新型コロナウイルス感染症の特徴を踏まえ、感染の不安から適切な相談をせずに医療機関を受診することや感染しやすい環境に行くことを避けること。また、手洗い、咳エチケット等を徹底し、風邪症状があれば、外出を控えていただき、やむを得ず、外出される場合にはマスクを着用すること。</p>
+  <div class="col-12 measures_summary circle4 bg-navy fade-elem js-fade-trigger">
+    <h1 class="title text-center fade-element-down">まとめ・対策</h1>
+    <p class="fade-element-up"><span class="text-bold">今後、新型コロナウイルスはどのような経緯をたどり終息あるいは再度感染を増加させてしまうのかについては現在も研究段階となっています。</span>新型コロナウイルス感染症の特徴を踏まえ、感染の不安から適切な相談をせずに医療機関を受診することや感染しやすい環境に行くことを避けること。また、手洗い、咳エチケット等を徹底し、風邪症状があれば、外出を控えていただき、やむを得ず、外出される場合にはマスクを着用することです。</p>
   </div>
   <footer>
     <div class="text-white text-center bg-dark">
@@ -79,4 +80,6 @@
     </div>
   </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src ="main.js"></script>
 </html>
